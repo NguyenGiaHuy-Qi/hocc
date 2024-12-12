@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main(){
-	int a,daongc = 0;
+	int a;
 	printf("Nhap so nguyen co 4 so: ");
 	scanf("%d",&a);
-	while(a!= 0){
-	int x = a % 10;
-	daongc = daongc * 10 + x;
-	a = a/10;	
-	}printf("vay tong la %d",daongc);
+	int	hangngan = a / 1000;
+	int hangtram = (a % 1000) / 100;
+	int hangchuc = (a % 100)/ 10;
+	int hangdonvi = a % 10;
+	printf("vay tong la %d%d%d%d",hangdonvi,hangchuc,hangtram,hangngan);
 	return 0;
 }
