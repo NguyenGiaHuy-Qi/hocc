@@ -5,6 +5,7 @@ int main(){
 	scanf("%d",&month);
 	printf("Nhap ngay:");
 	scanf("%d",&day);
+	if(day > 0 && day < 32 && month > 0 && month < 13){
 	if ((day >= 21 && month == 3) || (day <= 19 && month == 4)) {
         printf("Cung hoang dao: Bach Duong");
     } else if ((day >= 20 && month == 4) || (day <= 20 && month == 5)) {
@@ -31,7 +32,8 @@ int main(){
         printf("Cung hoang dao: Song Ngu");
     } else {
         printf("Ngay sinh hoac thang sinh khong hop le");
-    }
+    }}else{
+		printf("Du lieu khong hop le");
 
     return 0;
 }
