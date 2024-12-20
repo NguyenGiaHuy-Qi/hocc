@@ -16,23 +16,23 @@ int main() {
 
     do {
         printf("\nMENU\n");
-        printf("1. Nhap so phan tu va gia tri cac phan tu\n");
-        printf("2. In ra gia tri cac phan tu\n");
-        printf("3. In ra gia tri cac phan tu chan va tinh tong\n");
-        printf("4. In ra gia tri lon nhat va nho nhat trong mang\n");
-        printf("5. In ra cac phan tu la so nguyen to trong mang va tinh tong\n");
-        printf("6. Thong ke so luong phan tu bang mot so nhap vao\n");
-        printf("7. Them mot phan tu vao vi tri chi dinh\n");
-        printf("8. Thoat\n");
+        printf("1.Nhap so phan tu va gia tri cac phan tu\n");
+        printf("2.In ra gia tri cac phan tu\n");
+        printf("3.In ra gia tri cac phan tu chan va tinh tong\n");
+        printf("4.In ra gia tri lon nhat va nho nhat trong mang\n");
+        printf("5.In ra cac phan tu la so nguyen to trong mang va tinh tong\n");
+        printf("6.Thong ke so luong phan tu bang mot so nhap vao\n");
+        printf("7.Them mot phan tu vao vi tri chi dinh\n");
+        printf("8.Thoat\n");
         printf("Lua chon cua ban: ");
         scanf("%d", &choice);
 
         switch(choice) {
             case 1: {
-                printf("Nhap so phan tu (toi da %d): ", MAX_SIZE);
+                printf("Nhap so phan tu: ");
                 scanf("%d", &n);
                 if (n > MAX_SIZE) {
-                    printf("So phan tu vuot qua gioi han cho phep! Chua duoc cap nhat.\n");
+                    printf("So phan tu vuot qua gioi han.\n");
                     n = MAX_SIZE;
                 }
                 printf("Nhap gia tri cac phan tu:\n");
@@ -44,7 +44,7 @@ int main() {
             }
             case 2: {
                 if (n == 0) {
-                    printf("Mang rong! Khong co gia tri de hien thi.\n");
+                    printf("Khong co gia tri.\n");
                 } else {
                     printf("Gia tri cac phan tu: ");
                     for (int i = 0; i < n; i++) {
@@ -77,7 +77,7 @@ int main() {
                     printf("Gia tri lon nhat: %d\n", max);
                     printf("Gia tri nho nhat: %d\n", min);
                 } else {
-                    printf("Mang rong! Khong co gia tri de hien thi.\n");
+                    printf("Khong co gia tri.\n");
                 }
                 break;
             }
@@ -117,7 +117,7 @@ int main() {
                     int value, position;
                     printf("Nhap gia tri can them: ");
                     scanf("%d", &value);
-                    printf("Nhap vi tri can them (0 den %d): ", n);
+                    printf("Nhap vi tri can them: ",);
                     scanf("%d", &position);
                     if (position >= 0 && position <= n) {                       
                         for (int i = n; i > position; i--) {
@@ -126,10 +126,10 @@ int main() {
                         arr[position] = value;
                         n++;
                     } else {
-                        printf("Vi tri khong hop le!\n");
+                        printf("Vi tri khong hop le\n");
                     }
                 } else {
-                    printf("Mang da day! Khong the them phan tu.\n");
+                    printf("Khong the them phan tu.\n");
                 }
                 break;
             }
@@ -138,7 +138,7 @@ int main() {
                 break;
             }
             default: {
-                printf("Lua chon khong hop le! Vui long chon lai.\n");
+                printf("Vui long chon lai.\n");
                 break;
             }
         }
