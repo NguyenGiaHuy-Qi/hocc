@@ -45,7 +45,7 @@ int main(){
 			int position;
 			printf("Nhap vi tri ban muon sua: ");
 			scanf("%d",&position);
-			if(position > 0 && position < n){
+			if(position >= 0 && position < n){
 				int newval;
 				printf("Nhap gia tri moi: ");
 				scanf("%d",&newval);
@@ -61,24 +61,23 @@ int main(){
 			int position;
 			printf("Nhap vi tri ban muon xoa: ");
 			scanf("%d",&position);
-			if(position > 0 && position < n){
+			if(position >= 0 && position < n){
 				for(int i = position;i<n-1;i++){
 					arr[i] = arr[i+1];
+				}
 					n--;
 					printf("Mang sau khi duoc xoa gia tri la: ");
 				for(int i = 0;i<n;i++){
 				printf("%d ",arr[i]);
 			}printf("\n");
 				}
-			}
 			break;
 		}
 		case 6:{
 			printf("Thooat chuong trinh");
-			choice++;
 			break;
 		}
 		}
-	}while(choice <= 6);
+	}while(choice != 6);
 	return 0;
 }
