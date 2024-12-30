@@ -2,7 +2,7 @@
 #include<math.h>
 int perfect(int a){
 	int tong = 0;
-	for(int i = 1;i<sqrt(a);i++){
+	for(int i = 1;i<=sqrt(a);i++){
 		if(a % i == 0){
 			tong += i;
 			if( i != a / i){
