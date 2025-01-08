@@ -11,9 +11,9 @@ typedef struct SinhVien SinhVien;
 
 int main(){
 	SinhVien x;
-	strcpy(x.name,"Lu Nhut Dinh");
-	x.age=20;
-	strcpy(x.phoneNumber,"0849029065");
+	strcpy(x.name,"Nguyen Gia Huy");
+	x.age=19;
+	strcpy(x.phoneNumber,"0344488306");
 	
 	printf("Ten: %s\n",x.name);
 	printf("Tuoi: %d\n",x.age);
